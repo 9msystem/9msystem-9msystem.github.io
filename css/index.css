@@ -1,0 +1,207 @@
+/* 用来美化首页 */
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+body{
+    background-color: #f3f5f7;
+}
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;   
+}
+.clearfix::before,.clearfix::after{
+    content: "";
+    display:table ;
+}
+.clearfix::after{
+    clear: both;
+}
+.header{
+    height: 50px;
+    /* background-color: pink; */
+    margin: 20px auto;
+}
+h1{
+    float: left;
+}
+.nav{
+float: left;
+height: 50px;
+/* background-color: green;  */
+margin-left: 70px;
+}
+.nav li{
+    float: left;
+    margin-right: 35px;
+}
+.nav li a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+}
+.search{
+    width: 452px;
+    height: 50px;
+    /* border: 1px solid #000; */
+    float: left;
+    margin-left: 100px;
+}
+.search input{
+    padding-left: 20px;
+    width: 350px;
+    height: 48px;
+    float: left;
+    color: #999;
+   
+}
+.search input::placeholder{
+    font-size: 18px;
+}
+.search button{
+    /* float: left; */
+    width: 100px;
+    height: 48px;
+    border:0;
+    background-image: url(../images/ptm.png);
+}
+.user{
+    float: right;
+    margin-right: 50px;
+    height: 50px;
+    line-height: 50px;
+}
+.user img{
+    vertical-align: middle;
+}
+.banner{
+    height: 150px;
+    /* background-color:#8bafdd; */
+   
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+.banner .wrapper{
+    height: 400px;
+    /* background-image:url(../images/33.png) ; */
+}
+.goods{
+    height: 60px;
+    padding-left: 34px;
+    padding-right: 24px;
+    background-color: #fff;
+    margin-top: 8px;
+    box-shadow: 0px 2px 3px 0px
+    rgba(118, 118, 118, 0.2);
+    line-height: 60px;
+}
+.goods h2{
+    float: left;
+    font-size: 16px;
+}
+.goods ul{
+    float: left;
+    margin-left: 30px;
+}
+.goods ul li{
+    float: left;
+}
+.goods .xingqu{
+   float: right;
+}
+.goods li a{
+    border-left: 1px solid #bfbfbf;
+    padding: 0 30px;
+}
+.box{
+    margin-top: 34px;
+}
+.box .title{
+    height: 40px;
+    background-color:#f3f5f7;
+}
+.box .title h2{
+    float: left;
+    font-size: 16px;
+}
+.box .title a{
+    float: right;
+    margin-right: 30px;
+}
+.box .content li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 380px;
+    height: 80px;
+    background-color: #fff;
+}
+.box .content li a{
+   float: left;
+}
+.box .content li a h3{
+    float: right;
+    margin-top: 20px;
+    margin-left: 50px;
+   
+}
+.box .title2{
+    height: 40px;
+    width: 1200px;
+    /* margin-top: 180px; */
+    /* background-color: pink; */
+}
+.box .title2 a{
+    float: right;
+    margin-right: 30px;
+}
+.box .title2 h2{
+    float: left;
+    font-size: 16px;
+}
+.box .content2 li a{
+    float: left;
+ }
+ .box .content2 li a h3{
+     float: right;
+     margin-top: 20px;
+     margin-left: 50px;
+    
+ }
+ .box .content2 li{
+    float: left;
+    margin-right: 15px;
+    margin-bottom: 15px;
+    width: 380px;
+    height: 80px;
+    background-color: #fff;
+}
+.footer{
+    margin-top: 20px;
+    padding: 30px;
+    height: 200px;
+    background: linear-gradient(43deg, rgb(65, 88, 208) 0%, rgb(200, 80, 192) 46%, rgb(255, 204, 112) 100%);
+}
+.footer .left{
+    float: left;
+}
+.footer .right{
+    float: right;
+}
+.footer .right dl{
+    float: left;
+    margin-left: 120px;
+}
+.footer .right dd{
+    margin-top: 10px;
+}
+.shijian{
+   text-align: center;
+   color:#d57eeb;
+}

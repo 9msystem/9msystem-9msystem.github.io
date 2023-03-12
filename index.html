@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>工具集合器</title>
+    <link rel="stylesheet" href="./css/index.css">
+   
+</head>
+<body>
+
+        <script>
+        
+            let shi
+            document.write(`<div class="shijian">${shi}</div>`)
+            function getDate(){
+                var data=new Date()
+                var year=data.getFullYear()
+                var month=data.getMonth()+1
+                var datas=data.getDate()
+                var hour=data.getHours()
+                var minate=data.getMinutes()
+                var second=data.getSeconds()
+                var arr=['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+                var day=data.getDay()-1
+                
+                
+                document.querySelector('div').innerHTML=year+'年'+month+'月'+datas+'日'+''+arr[day]+'   '+hour+((minate>=10?":":":0"))+minate+((second>=10?":":":0"))+second
+            }
+            shi=getDate()
+            setInterval(getDate,1000)
+           
+        </script>  
+
+    <!-- 头部 -->
+    <div class="header wrapper">
+     
+    <h1>
+        <a href="#"><img src="./images/a.png" alt=""></a>
+    </h1>
+    <div class="nav">
+        <ul>
+            <li><a href="#">首页</a></li>
+            <li><a href="#">帮助</a></li>
+        </ul>
+    </div>
+    <div class="search">
+        <input type="text" value="请输入关键字">
+        <button></button>
+        <script>
+        //   placeholder="请输入关键字"
+        var text=document.querySelector('input')
+        text.onfocus=function(){
+            if (this.value==='请输入关键字') {
+                this.value=''
+            }
+            this.style.color='#000'
+        }
+        text.onblur=function(){
+            if (this.value==='') {
+                this.value='请输入关键字'
+            }
+            this.style.color='#999'
+        }
+        </script>
+
+    </div>
+    <div class="user">
+        <img src="./images/user.jpg" alt="">
+        <span>小王工具箱</span>
+    </div>
+    <script>
+        
+    </script>
+    </div>
+    <!-- 轮播图banner -->
+    <div class="banner">
+        <div class="wrapper">
+        </div>
+    </div>
+    <div class="goods wrapper">
+        <h2>精品推荐</h2>
+        <ul>
+            <li><a href="./pages/07.html">大小写转换</a></li>
+           <li><a href="./pages/03.html">最小公倍数</a></li>
+            <li><a href="./pages/02.html">最大公约数</a></li>
+            <li><a href="./pages/01.html">字符数统计</a></li>
+            <li><a href="./pages/08.html">数值求和</a></li>
+        </ul>
+        <a href="#" class="xingqu">修改工具</a>
+    </div>
+    <div class="box wrapper" >
+        <div class="title">
+            <h2>精品推荐</h2>
+            <a href="#">查看全部</a></div>
+    <div class="content clearfix">
+                <ul>        
+    <script>
+        let data=[
+        {
+            imgsrc:'./images/c1.png',
+            title:'在线字符串统计',
+            url:'./pages/01.html'
+        },
+        {
+            imgsrc:'./images/c2.png',
+            title:'求两个数的最大公因数',
+            url:'./pages/02.html'
+        },
+        {
+            imgsrc:'./images/c2.png',
+            title:'求两个数的最小公倍数',
+            url:'./pages/03.html'
+        },
+        {
+            imgsrc:'./images/c3.png',
+            title:'求等差数列',
+            url:'./pages/04.html'
+        },
+        {
+            imgsrc:'./images/c4.png',
+            title:'金额大小写转换',
+            url:'./pages/05.html'
+        },
+        {
+            imgsrc:'./images/c5.png',
+            title:'生成随机数',
+            url:'./pages/06.html'
+        }
+    ]
+    for(let i=0;i<data.length;i++){
+        document.write(`
+                <li>
+                    <a href="${data[i].url}">
+                     <img src="${data[i].imgsrc}" alt="">
+                    <h3>${data[i].title}</h3>
+                    </a>
+                </li>
+            `)
+    }
+            
+    </script>
+    </ul>
+</div>
+    
+        
+               
+                
+        
+        <div class="title2">
+            <h2>基本工具</h2>
+            <a href="#">查看全部</a>
+        </div>
+        <div class="content2 clearfix">
+            <ul>
+                <script>
+        let data1=[
+        {
+            imgsrc1:'./images/d1.png',
+            title1:'英文大小写转换',
+            url:'./pages/07.html'
+        },
+        {
+            imgsrc1:'./images/d2.png',
+            title1:'数值求和工具',
+            url:'./pages/08.html'
+        },
+        {
+            imgsrc1:'./images/d4.png',
+            title1:'等比数列求和',
+            url:'./pages/09.html'
+        },
+        {
+            imgsrc1:'./images/d3.png',
+            title1:'计算BMI',
+            url:'./pages/10.html'
+        },
+        {
+            imgsrc1:'./images/d5.png',
+            title1:'数值大小排序',
+            url:'./pages/11.html'
+        },
+        {
+            imgsrc1:'./images/d6.png',
+            title1:'比较数的大小',
+            url:'./pages/12.html'
+        },
+        {
+            imgsrc1:'./images/d7.png',
+            title1:'判断是否为素数',
+            url:'./pages/13.html'
+        },
+        {
+            imgsrc1:'./images/d8.png',
+            title1:'判断是否为闰年',
+            url:'./pages/14.html'
+        },
+        {
+            imgsrc1:'./images/d9.png',
+            title1:'计算平均值',
+            url:'./pages/15.html'
+        }
+    ]
+                    for(let j=0;j<data1.length;j++){
+                        document.write(`
+                    <li>
+                    <a href="${data1[j].url}">
+                        <img src="${data1[j].imgsrc1}" alt="">
+                        <h3>${data1[j].title1}</h3>
+                    </a>
+                    </li>`)
+                    }
+                </script>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <div class="left">
+                <img src="./images/c.png" alt="">
+                <p>小王工具专为你而打造的工具♥。</p>
+            </div>
+            <div class="right">
+                <dl>
+                    <dt>关于小王工具箱</dt>
+                    <dd><a href="#">关于</a></dd>
+                    <dd><a href="#">管理人员</a></dd>
+                    <dd><a href="#">制作目的</a></dd>
+                    <dd><a href="#">帮助</a></dd>
+                </dl>
+                <dl>
+                    <dt>新手指南</dt>
+                    <dd><a href="#">如何操作</a></dd>
+                    <dd></dd>
+                </dl>
+                <dl>
+                    <dt>制作人</dt>
+                    <dd>小王</dd>
+                    <dd>小汤</dd>
+                    <dd>小孟</dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

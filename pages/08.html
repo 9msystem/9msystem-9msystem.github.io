@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .shijian{
+            width: 220px;
+            height: 50px;
+            background: pink;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        
+        let shi
+        document.write(`<div class="shijian">${shi}</div>`)
+        function getDate(){
+            var data=new Date()
+            var year=data.getFullYear()
+            var month=data.getMonth()+1
+            var datas=data.getDate()
+            var hour=data.getHours()
+            var minate=data.getMinutes()
+            var second=data.getSeconds()
+            var arr=['星期一','星期二','星期三','星期四','星期五','星期六','星期日']
+            var day=data.getDay()
+            
+            
+            document.querySelector('div').innerHTML=year+'年'+month+'月'+datas+'日'+arr[day]+hour+((minate>=10?":":":0"))+minate+((second>=10?":":":0"))+second
+        }
+        shi=getDate()
+        setInterval(getDate,1000)
+       
+    </script>
+</body>
+</html>
